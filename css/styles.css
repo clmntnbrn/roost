@@ -1,0 +1,18 @@
+html {
+  font-size: 1rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: #f8f8f8;
+  background-color: #0A2833;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  max-width: 1210px;
+  padding: 2rem 0 2rem 0;
+  margin: 0 auto 0 auto;
+}
+
+header {
+  text-align: center;
+}
