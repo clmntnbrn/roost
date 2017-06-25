@@ -1,8 +1,17 @@
+/* COLOURS
+BACKGROUND: #0A2833;
+PARAGRAPH: #F7F6F5;
+HEADINGS: #FF715B;
+CALLOUT: #FCCA46;
+HELPER: #4B606D;
+*/
+
+
 html {
   font-size: 1rem;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-  color: #f8f8f8;
+  color: #F7F6F5;
   background-color: #0A2833;
   font-family: 'Open Sans', sans-serif;
 }
@@ -15,4 +24,17 @@ html {
 
 header {
   text-align: center;
+}
+
+h1 {
+  font-size: 1.5rem;
+  color: #FF715B;
+}
+
+.callout {
+  color: #FCCA46;
+}
+
+.helper {
+  color: #4B606D;
 }
