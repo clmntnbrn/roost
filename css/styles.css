@@ -9,18 +9,20 @@ html {
   font-weight: 300;
   letter-spacing: 0.6px;
   --ff: 'Open Sans', sans-serif;
-  --mainBg: #0A2833;
+  --deepSea: #0A2833;
   --me: #ff8b79;
   --snowQueen: #F7F6F5;
-  --callout: #FCCA46;
-  --labels: #acbcc5;
-  --border: #4B606D;
+  --sun: #FCCA46;
+  --iceBlue: #acbcc5;
+  --thunder: #4B606D;
   --goGo: #44BBA4;
+  --gradOne: #4e4376;
+  --gredTwo: #2b5876;
 }
 
 body {
   max-width: 980px;
-  color: var(--labels);
+  color: var(--iceBlue);
   font-family: var(--ff);
   margin: auto;
 }
@@ -42,17 +44,15 @@ h1 {
   margin: 0 auto 0 auto;
   display: flex;
   flex-direction: column;
-  background-color: var(--mainBg);
+  background: #2b5876;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(45deg, var(--gradOne), var(--gredTwo));  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(45deg, var(--gradOne), var(--gredTwo)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .row {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-}
-
-.helper {
-  color: var(--helper);
 }
 
 /******************************************
@@ -65,11 +65,11 @@ input {
   border-radius: 0px
   box-shadow: none;
   border: none;
-  border-bottom: 0.8px solid var(--border);
+  border-bottom: 0.8px solid var(--iceBlue);
   height: 44px;
   width: 100%;
   margin-bottom: 2rem;
-  background-color: var(--mainBg);
+  background-color: rgba(0,0,0,0);
 }
 
 label {
