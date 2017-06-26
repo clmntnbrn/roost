@@ -64,15 +64,16 @@ input {
   -moz-border-radius: 0;
   border-radius: 0px
   box-shadow: none;
-  border: 1.2px solid var(--border);
+  border: none;
+  border-bottom: 0.8px solid var(--border);
   height: 44px;
   width: 100%;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   background-color: var(--mainBg);
 }
 
 label {
   display: block;
-  margin-bottom: 0.5rem;
+  /*margin-bottom: 0.5rem;*/
   color: var(--me);
 }
