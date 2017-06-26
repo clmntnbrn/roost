@@ -1,25 +1,28 @@
-/* COLOURS
-BACKGROUND: #0A2833;
-PARAGRAPH: #F7F6F5;
-HEADINGS: #FF715B;
-CALLOUT: #FCCA46;
-HELPER: #4B606D;
+/* COLOURS variants
+HEADINGS: #FF715B; #ff8b79;
+HELPER: #acbcc5; #4B606D;
+GREEN: #44BBA4; #daedbd;
 */
-
 
 html {
   font-size: 1rem;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-  color: #F7F6F5;
-  background-color: #0A2833;
-  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.6px;
+  --ff: 'Open Sans', sans-serif;
+  --mainBg: #0A2833;
+  --me: #ff8b79;
+  --snowQueen: #F7F6F5;
+  --callout: #FCCA46;
+  --labels: #acbcc5;
+  --border: #4B606D;
+  --goGo: #44BBA4;
 }
 
-.container {
-  max-width: 1210px;
-  padding: 2rem 0 2rem 0;
-  margin: 0 auto 0 auto;
+body {
+  max-width: 980px;
+  color: var(--labels);
+  font-family: var(--ff);
+  margin: auto;
 }
 
 header {
@@ -27,14 +30,49 @@ header {
 }
 
 h1 {
-  font-size: 1.5rem;
-  color: #FF715B;
+  font-size: 3rem;
+  font-weight: 300;
+  color: var(--me);
 }
 
-.callout {
-  color: #FCCA46;
+
+.container {
+  max-width: 640px;
+  padding: 1rem 2rem 1rem;
+  margin: 0 auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--mainBg);
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .helper {
-  color: #4B606D;
+  color: var(--helper);
+}
+
+/******************************************
+/* FORM ELEMENTS
+/*******************************************/
+
+input {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0px
+  box-shadow: none;
+  border: 1.2px solid var(--border);
+  height: 44px;
+  width: 100%;
+  margin-bottom: 1rem;
+  background-color: var(--mainBg);
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--me);
 }
