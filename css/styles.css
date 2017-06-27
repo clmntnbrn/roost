@@ -11,6 +11,7 @@ html {
   --ff: 'Open Sans', sans-serif;
   --deepSea: #0A2833;
   --me: #ff8b79;
+  --doThis: #FF715B;
   --snowQueen: #F7F6F5;
   --sun: #FCCA46;
   --iceBlue: #acbcc5;
@@ -25,6 +26,7 @@ body {
   color: var(--iceBlue);
   font-family: var(--ff);
   margin: auto;
+  min-height: 100vh;
 }
 
 header {
@@ -32,11 +34,20 @@ header {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 300;
+  color: var(--me);
+  margin: 2rem;
+}
+
+a {
+  text-decoration: none;
   color: var(--me);
 }
 
+a:hover{
+  text-decoration: underline;
+}
 
 .container {
   max-width: 640px;
@@ -55,9 +66,32 @@ h1 {
   flex-wrap: wrap;
 }
 
+.helper {
+  text-align: center;
+}
+
+.fa-fw {
+  padding-right: 0.5rem;
+}
+
 /******************************************
 /* FORM ELEMENTS
 /*******************************************/
+
+form {
+  margin: 4rem;
+}
+
+fieldset {
+  border: none;
+}
+
+legend {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: var(--me);
+}
 
 input {
   -webkit-border-radius: 0;
@@ -68,12 +102,37 @@ input {
   border-bottom: 0.8px solid var(--iceBlue);
   height: 44px;
   width: 100%;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
   background-color: rgba(0,0,0,0);
+  color: var(--snowQueen);
+  font-size: 0.8rem;
 }
 
 label {
   display: block;
   /*margin-bottom: 0.5rem;*/
-  color: var(--me);
+  color: var(--iceBlue);
+}
+
+button {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0px;
+  color: var(--snowQueen);
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+  background: var(--doThis);
+  padding: 0.8rem 1.2rem;
+  text-decoration: none;
+  min-width: 100%;
+  text-align: center;
+  transition: background 0.3s ease 0s;
+  border: 0px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background-color: #FF5459;
 }
