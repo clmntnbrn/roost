@@ -136,3 +136,13 @@ button {
 button:hover {
   background-color: #FF5459;
 }
+
+/******************************************
+/* MEDIA QUERIES
+/*******************************************/
+
+@media only screen and (max-width:520px) {
+  form {
+    margin: 0;
+  }
+}
