@@ -4,7 +4,12 @@ HELPER: #acbcc5; #4B606D;
 GREEN: #44BBA4; #daedbd;
 */
 
-html {
+html,
+h1,
+h2,
+h3,
+h4,
+p {
   font-size: 1rem;
   font-weight: 300;
   letter-spacing: 0.6px;
@@ -23,30 +28,14 @@ html {
 
 body {
   max-width: 980px;
-  color: var(--iceBlue);
   font-family: var(--ff);
+  color: var(--iceBlue);
   margin: auto;
   min-height: 100vh;
 }
 
 header {
   text-align: center;
-}
-
-h1 {
-  font-size: 4rem;
-  font-weight: 300;
-  color: var(--me);
-  margin: 2rem;
-}
-
-a {
-  text-decoration: none;
-  color: var(--me);
-}
-
-a:hover{
-  text-decoration: underline;
 }
 
 .container {
@@ -66,12 +55,87 @@ a:hover{
   flex-wrap: wrap;
 }
 
-.helper {
+/******************************************
+/* FONT STYLES
+/*******************************************/
+
+h1 {
+  font-size: 4rem;
+  color: var(--me);
+  margin: 2rem;
+}
+
+h2 {
+  font-size: 2.66rem;
+  color: var(--iceBlue);
+  margin: 2rem;
+}
+
+h3 {
+  font-size: 1.77rem;
+  color: var(--iceBlue);
+  margin: 2rem;
   text-align: center;
 }
 
+h4 {
+  font-size: 1.18rem;
+  color: var(--iceBlue);
+  margin: 2rem;
+  text-align: center;
+}
+
+.helper {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+/******************************************
+/* FONT AWSOME STYLES
+/*******************************************/
+
 .fa-fw {
   padding-right: 0.5rem;
+}
+
+/******************************************
+/* LINK STYLES
+/*******************************************/
+
+a {
+  text-decoration: none;
+  color: var(--me);
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+ins {
+  text-decoration: none;
+  position: relative;
+}
+
+ins:before {
+  content: "";
+  /*height: 1px;
+  background-color: var(--doThis);
+  width: 50%;
+  position: absolute;
+  bottom: -2px;
+  left: 0;*/
+}
+
+ins:hover::before {
+  background-color: var(--doThis);
+  height: 1px;
+  width: 1%;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  transform: scaleX(50);
+  transform-origin: 0 0;
+  transition: transform 0.3s;
 }
 
 /******************************************
@@ -87,7 +151,7 @@ fieldset {
 }
 
 legend {
-  font-size: 2rem;
+  font-size: 2.66rem;
   margin-bottom: 2rem;
   text-align: center;
   color: var(--me);
@@ -143,6 +207,18 @@ button:hover {
 
 @media only screen and (max-width:520px) {
   form {
-    margin: 0;
+    margin: 2rem 0;
+  }
+
+  h1,h2,h3,h4 {
+    margin: 2rem 0;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  legend {
+    font-size: 1.77rem;
   }
 }
