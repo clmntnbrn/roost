@@ -23,7 +23,7 @@ p {
   --thunder: #4B606D;
   --goGo: #44BBA4;
   --gradOne: #4e4376;
-  --gredTwo: #2b5876;
+  --gradTwo: #2b5876;
 }
 
 body {
@@ -34,25 +34,27 @@ body {
   min-height: 100vh;
 }
 
-header {
+.mainHeader,
+nav {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
   text-align: center;
+}
+
+.mainHeader {
+  width: 100%;
 }
 
 .container {
   max-width: 640px;
   padding: 1rem 2rem 1rem;
   margin: 0 auto 0 auto;
-  display: flex;
-  flex-direction: column;
-  background: #2b5876;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(45deg, var(--gradOne), var(--gredTwo));  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(45deg, var(--gradOne), var(--gredTwo)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-.row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  /*display: flex;
+  flex-direction: column;*/
+  background: var(--gradTwo);  /* fallback for old browsers */
+  background: -webkit-linear-gradient(45deg, var(--gradOne), var(--gradTwo));  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(45deg, var(--gradOne), var(--gradTwo)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 /******************************************
@@ -85,21 +87,23 @@ h4 {
   text-align: center;
 }
 
+.title {
+  text-align: center;
+}
+
 .helper {
   text-align: center;
   margin: 2rem 0;
 }
 
-/******************************************
-/* FONT AWSOME STYLES
-/*******************************************/
+/* FONT AWSOME STYLES */
 
 .fa-fw {
   padding-right: 0.5rem;
 }
 
 /******************************************
-/* LINK STYLES
+/* CONTENT LINK STYLES (NAV LINK STYLES ARE IN responsive-nav.css)
 /*******************************************/
 
 a {
@@ -197,6 +201,10 @@ button {
   text-transform: uppercase;
 }
 
+button a {
+  color: var(--snowQueen);
+}
+
 button:hover {
   background-color: #FF5459;
 }
@@ -222,3 +230,17 @@ button:hover {
     font-size: 1.77rem;
   }
 }
+
+/*@media only screen and (min-width:641px) {
+  .mainHeader {
+    height: 200px;
+    flex-direction: row;
+  }
+  nav {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  nav a {
+    border-bottom: transparent;
+  }
+}*/
