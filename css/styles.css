@@ -47,7 +47,8 @@ nav {
 }
 
 .container {
-  max-width: 640px;
+  max-width: 375px;
+  min-height: 760px;
   padding: 1rem 2rem 1rem;
   margin: 0 auto 0 auto;
   /*display: flex;
@@ -62,26 +63,18 @@ nav {
 /*******************************************/
 
 h1 {
-  font-size: 4rem;
+  font-size: 3rem;
   color: var(--me);
-  margin: 2rem;
 }
 
 h2 {
-  font-size: 2.66rem;
+  font-size: 2rem;
   color: var(--iceBlue);
   margin: 2rem;
 }
 
 h3 {
-  font-size: 1.77rem;
-  color: var(--iceBlue);
-  margin: 2rem;
-  text-align: center;
-}
-
-h4 {
-  font-size: 1.18rem;
+  font-size: 1.33rem;
   color: var(--iceBlue);
   margin: 2rem;
   text-align: center;
@@ -89,11 +82,12 @@ h4 {
 
 .title {
   text-align: center;
+  margin: 1rem;
 }
 
 .helper {
   text-align: center;
-  margin: 2rem 0;
+  margin: 1rem 0;
 }
 
 /* FONT AWSOME STYLES */
@@ -146,16 +140,16 @@ ins:hover::before {
 /* FORM ELEMENTS
 /*******************************************/
 
-form {
+/*form {
   margin: 4rem;
-}
+}*/
 
 fieldset {
   border: none;
 }
 
 legend {
-  font-size: 2.66rem;
+  font-size: 2rem;
   margin-bottom: 2rem;
   text-align: center;
   color: var(--me);
@@ -170,7 +164,7 @@ input {
   border-bottom: 0.8px solid var(--iceBlue);
   height: 44px;
   width: 100%;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
   background-color: rgba(0,0,0,0);
   color: var(--snowQueen);
   font-size: 0.8rem;
@@ -192,13 +186,13 @@ button {
   font-size: 1.5rem;
   background: var(--doThis);
   padding: 0.8rem 1.2rem;
+  margin: 1rem 0;
   text-decoration: none;
   min-width: 100%;
   text-align: center;
   transition: background 0.3s ease 0s;
   border: 0px;
   cursor: pointer;
-  text-transform: uppercase;
 }
 
 button a {
@@ -213,7 +207,7 @@ button:hover {
 /* MEDIA QUERIES
 /*******************************************/
 
-@media only screen and (max-width:520px) {
+/*@media only screen and (max-width:520px) {
   form {
     margin: 2rem 0;
   }
@@ -229,7 +223,7 @@ button:hover {
   legend {
     font-size: 1.77rem;
   }
-}
+}*/
 
 /*@media only screen and (min-width:641px) {
   .mainHeader {
